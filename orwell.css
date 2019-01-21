@@ -1,34 +1,80 @@
+body {
+  margin: 40px;
+  border: thin solid black;
+  padding: 20px;
+}
 /* user story 1 */
  #main {
    font-family: 'Work Sans', sans-serif;
    margin: 40px;
+   background-color: #fff;
+   color: #333;
  }
  /* user story 2 */
  #title {
    font-family: 'Crimson Text', serif;
+   text-align: center;
  }
 h3 {
   font-family: 'Crimson Text', serif;
 }
 /* user story 3 */
 #img-div {
-  /* placeholder text */
+
 }
 /* user story 4 and 8 */
 #image {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: auto;
 }
 /* user story 5 */
 #img-caption {
-  text-align: center;
+  /* text-align: center; */
+  margin: auto;
 }
 /* user story 6 */
 #tribute-info {
   /* placeholder */
 }
 /* user story 7 */
-tribute-link {
-  /* placeholder */
+#tribute-link {
+  font-style: italic;
+  text-decoration: none;
+}
+#tribute-link:hover {
+  color: red;
+  opacity: 0.7;
+}
+/* below i will try to work on a grid */
+.container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+  "headline"
+  "quote"
+  "content"
+  "work"
+  "footer"
+}
+.headline {
+  grid-area: headline;
+}
+.quote {
+  grid-area: quote;
+}
+.content {
+  grid-area: content;
+}
+.work {
+  grid-area: work;
+}
+.footer {
+  grid-area: footer;
+}
+/* ...........time to work on media css................. */
+@@media (min-width: 500px) {
+
+
 }
