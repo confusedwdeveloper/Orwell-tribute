@@ -85,10 +85,20 @@ h3 {
     grid-template-areas:
     "headline headline"
     "content content"
-    "quote work"
-    "footer footer";
+    "work work"
+    "quote quote"
+    "footer footer"
 
   }
+  /* .quote {
+    width: 20vw;
+  } */
+  /* .footer {
+    align-self: end;
+  }
+  .work {
+    justify-self: end;
+  } */
 
 
 
@@ -101,13 +111,13 @@ h3 {
     grid-template-columns: 120px auto 120px;
     grid-template-areas:
     "headline headline headline"
-    "content content content"
-    "quote . work"
-    "footer footer footer";
+    "quote content work"
+    ". footer .";
   }
   .quote {
-    width: 25vw;
+    width: 20vw;
     height:auto;
+    justify-self: start;
   }
   .work {
     justify-self: end;
